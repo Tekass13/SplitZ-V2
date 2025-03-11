@@ -10,6 +10,7 @@ class Router extends AbstractController
 
     public function __construct()
     {
+        parent::__construct();
         $this->authController = new AuthController();
         $this->groupController = new GroupController();
         $this->expenseController = new ExpenseController();
