@@ -1,0 +1,76 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixin.scss';
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: $dark;
+    color: $light;
+    width: 100%;
+    padding-top: 30vh;
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    @include flex-align;
+    width: 100%;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: $primary;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+}
+
+li {
+    list-style: none;
+}
+
+span {
+    color: $primary;
+}
+
+.icon {
+    width: 2.5em;
+    height: auto;
+    border-radius: 50%;
+}
+
+.button {  
+    background-color: $primary;
+    color: $dark;
+    border: none;
+    border-radius: .5em;
+    margin: 2em auto;
+    width: 8em;
+    padding: .5em;
+}       
+
+.button:hover {
+    cursor: pointer;
+    background-color: $hover;
+    color: $primary;
+    transition: all .25s ease-in;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,28 @@
+.close-button {
+    border:none;
+    background-color: $dark;
+    width: 0;
+    height: 0;
+}
+
+.close-button-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5em;
+    color: $light;
+    &:hover,
+    #search-button:hover {
+        background-color: $hover;
+        color:$primary;
+        border-radius: 50%;
+        transition: all .25 ease-in;
+    }
+}
+
+#search-button {
+    background-color: $dark;
+    color: $primary;
+    border: none;
+    padding: .5em;
+}

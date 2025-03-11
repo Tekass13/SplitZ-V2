@@ -1,0 +1,16 @@
+table,
+th,
+td {
+    border: 1px solid $light;
+}
+
+table {
+    margin: 1em;
+}
+th,
+td {
+    padding: .5em;
+}
+td {
+    position: relative;
+}

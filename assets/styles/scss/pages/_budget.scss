@@ -1,0 +1,30 @@
+.form-container {
+    @include flex-align;
+    flex-direction: column;
+    & fieldset {
+        @include flex-column;
+    }
+    & label {
+        padding: .5em;
+        text-align: left;
+    }
+    & .form-text {
+        margin: .5em;
+        text-align: left;
+    }
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+.text-icon {
+    @include flex-align;
+}
+
+.add-icon {
+    margin: .25em 0;
+    font-size: 2rem;
+    @include flex-align;
+}
